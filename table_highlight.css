@@ -1,0 +1,19 @@
+/*
+ * Change the colors in the bottom section to customise.
+ */
+
+/* Don't bold first row */
+.cm-s-obsidian .cm-table-widget th {
+    font-weight:normal;
+}
+
+/* Remove line break before tables */
+.cm-line:has(+ .cm-embed-block.cm-table-widget) br {
+    display: none;
+}
+
+/* Highlight cells that have bold(strong) or italic(em) */
+table td:has(strong), table th:has(strong), table td:has(em), table th:has(em) {
+    background-color: lightgrey !important;
+    color:black !important;
+}

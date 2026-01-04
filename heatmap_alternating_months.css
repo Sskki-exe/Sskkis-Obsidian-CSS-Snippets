@@ -1,0 +1,48 @@
+/*
+ * To be used with Richard Slettevoll's Heatmap Calendar plugin
+ * https://github.com/Richardsl/heatmap-calendar-obsidian
+ *
+ * Addition to example CSS provided by Richard Slettevoll
+ * https://github.com/Richardsl/heatmap-calendar-obsidian/blob/master/EXAMPLE_VAULT/.obsidian/snippets/heatmap_styleAlternatingMonths.css
+ *
+ * Added month separation, today highlight and label for days of week.
+*/
+
+/* Light mode */
+.heatmap-calendar-boxes .month-feb.isEmpty,
+.heatmap-calendar-boxes .month-apr.isEmpty,
+.heatmap-calendar-boxes .month-jun.isEmpty,
+.heatmap-calendar-boxes .month-aug.isEmpty,
+.heatmap-calendar-boxes .month-oct.isEmpty,
+.heatmap-calendar-boxes .month-dec.isEmpty {
+    background: #e2e2e2 !important;
+    /* border: 1px solid #e2e2e2;*/
+}
+
+/* Dark mode */
+.theme-dark .heatmap-calendar-boxes .month-feb.isEmpty,
+.theme-dark .heatmap-calendar-boxes .month-apr.isEmpty,
+.theme-dark .heatmap-calendar-boxes .month-jun.isEmpty,
+.theme-dark .heatmap-calendar-boxes .month-aug.isEmpty,
+.theme-dark .heatmap-calendar-boxes .month-oct.isEmpty,
+.theme-dark .heatmap-calendar-boxes .month-dec.isEmpty {
+    background: #424242 !important;
+	/* border: 1px solid #414141;*/
+}
+
+/* Separate months */
+.heatmap-calendar-boxes.separate-months {
+  grid-auto-flow: column;
+  grid-template-columns: repeat(64, minmax(0, 1fr));
+  grid-area: boxes;
+}
+
+/* Highlight today */
+.theme-dark .heatmap-calendar-boxes .today {
+  border: solid 1px white;
+}
+
+/* Label all days of the week */
+.heatmap-calendar-days li:nth-child(odd) {
+  visibility: visible;
+}

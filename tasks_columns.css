@@ -1,0 +1,25 @@
+/*
+ * Addition to solution by AnnaKornfeldSimpson
+ * https://github.com/obsidian-tasks-group/obsidian-tasks/discussions/859
+ *
+ * Added column top alignment.
+ */
+
+/*
+ * Change column width to set number of desired columns.
+ * The tasks block itslef is 686px wide.
+ * 250px is good for 2 columns.
+ */
+.block-language-tasks {
+    column-width: 250px;
+}
+
+/* Do not break columns in the middle of a task */
+.plugin-tasks-query-result > * {
+    break-inside: avoid;
+}
+
+/* Align top of columns to top of block */
+.block-language-tasks > div > ul {
+    margin:0;
+}

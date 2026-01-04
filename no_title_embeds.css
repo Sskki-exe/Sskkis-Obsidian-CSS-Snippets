@@ -1,0 +1,4 @@
+/* Remove titles from internal embeds */
+.embed-title {
+  display: none;
+}

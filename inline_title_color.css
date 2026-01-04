@@ -1,0 +1,9 @@
+/*
+ * Intended to be used with my Vanilla AMOLED Color Theme
+ * https://github.com/Sskki-exe/vanilla-amoled-theme-color
+ */
+
+/* Restore the color of the inline title to white */
+.inline-title {
+    color: white;
+}
